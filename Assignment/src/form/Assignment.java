@@ -558,6 +558,17 @@ public class Assignment extends javax.swing.JFrame implements Runnable {
     }//GEN-LAST:event_btnNewActionPerformed
 
     private void tblNVMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tblNVMouseClicked
+        this.lblEmailError.setVisible(false);
+        this.lblHoTenError.setVisible(false);
+        this.lblLuongError.setVisible(false);
+        this.lblMaNVError.setVisible(false);
+        this.lblTuoiError.setVisible(false);
+        this.txtMaNV.setBorder(new JTextField().getBorder());
+        this.txtHoTen.setBorder(new JTextField().getBorder());
+        this.txtLuong.setBorder(new JTextField().getBorder());
+        this.txtTuoi.setBorder(new JTextField().getBorder());
+        this.txtEmail.setBorder(new JTextField().getBorder());
+        
         this.selectedRow = this.tblNV.getSelectedRow();
 
         if (this.selectedRow == -1) {
@@ -595,6 +606,17 @@ public class Assignment extends javax.swing.JFrame implements Runnable {
     }//GEN-LAST:event_btnExitActionPerformed
 
     private void btnOpenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnOpenActionPerformed
+        this.lblEmailError.setVisible(false);
+        this.lblHoTenError.setVisible(false);
+        this.lblLuongError.setVisible(false);
+        this.lblMaNVError.setVisible(false);
+        this.lblTuoiError.setVisible(false);
+        this.txtMaNV.setBorder(new JTextField().getBorder());
+        this.txtHoTen.setBorder(new JTextField().getBorder());
+        this.txtLuong.setBorder(new JTextField().getBorder());
+        this.txtTuoi.setBorder(new JTextField().getBorder());
+        this.txtEmail.setBorder(new JTextField().getBorder());
+        
         this.nvLst = (ArrayList<NhanVien>) XFile.readObject(FILE_NAME);
         if (!this.nvLst.isEmpty()) {
             NhanVien nv = this.nvLst.get(0);
